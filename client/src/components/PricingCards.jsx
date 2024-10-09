@@ -9,7 +9,7 @@ const PricingCards = () => {
             Basic Plan
           </h2>
           <p className="text-center my-4">
-            <span className="text-4xl font-bold text-blue-600">$100</span>
+            <span className="text-4xl font-bold text-gradient">$100</span>
             <span className="text-gray-600 dark:text-gray-200">/month</span>
           </p>
           <ul className="text-gray-600 dark:text-gray-200 my-6 space-y-4">
@@ -34,12 +34,12 @@ const PricingCards = () => {
               No Backend Services (e.g., No Databases)
             </li>
           </ul>
-          <button className="w-full py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors">
+          <button className="w-full py-3  btn-gradient  rounded-full font-semibold hover:bg-blue-700 transition-colors">
             Get Started
           </button>
         </div>
 
-        <div className="bg-blue-600 text-white rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+        <div className="btn-gradient text-white rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-center">Pro Plan</h2>
           <p className="text-center my-4">
             <span className="text-4xl font-bold">$250</span>
@@ -77,7 +77,7 @@ const PricingCards = () => {
             Enterprise Plan
           </h2>
           <p className="text-center my-4">
-            <span className="text-4xl font-bold text-blue-600">$500</span>
+            <span className="text-4xl font-bold text-gradient">$500</span>
             <span className="text-gray-600 dark:text-gray-200">/month</span>
           </p>
           <ul className="text-gray-600 dark:text-gray-200 my-6 space-y-4">
@@ -102,7 +102,7 @@ const PricingCards = () => {
               Advanced Backend Services
             </li>
           </ul>
-          <button className="w-full py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors">
+          <button className="w-full py-3  btn-gradient  rounded-full font-semibold hover:bg-blue-700 transition-colors">
             Get Started
           </button>
         </div>

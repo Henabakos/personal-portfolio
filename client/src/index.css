@@ -28,5 +28,5 @@ body {
 }
 
 .btn-gradient {
-  @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full;
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white;
 }
