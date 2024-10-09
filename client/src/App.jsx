@@ -11,6 +11,7 @@ import AllFooter from "./components/AllFooter";
 import Service from "./pages/Service";
 import BlogPage from "./pages/BlogPage";
 import Spinner from "./components/Spinner";
+import AOSWrapper from "./utils/AosWrapper";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -27,30 +28,32 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [location.pathname]);
   return (
-    <div className="dark:bg-[#3b3b3b] dark:text-white">
-      {loading ? (
-        <Spinner />
-      ) : (
-        <div>
-          <Navabar />
-          <div className="flex ">
-            <IconSidebar />
-            <Sidebar />
-            <div className="pt-20  px-4 lg:pl-[250px] w-full">
-              <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/portfolio" element={<Portfoliopage />} />
-                <Route path="/services" element={<Service />} />
-                <Route path="/blog" element={<BlogPage />} />
-              </Routes>
-              <AllFooter />
+    <AOSWrapper>
+      <div className="dark:bg-[#3b3b3b] dark:text-white">
+        {loading ? (
+          <Spinner />
+        ) : (
+          <div>
+            <Navabar />
+            <div className="flex ">
+              <IconSidebar />
+              <Sidebar />
+              <div className="pt-20  px-4 lg:pl-[250px] w-full">
+                <Routes>
+                  <Route path="/" element={<LandingPage />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/portfolio" element={<Portfoliopage />} />
+                  <Route path="/services" element={<Service />} />
+                  <Route path="/blog" element={<BlogPage />} />
+                </Routes>
+                <AllFooter />
+              </div>
             </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </AOSWrapper>
   );
 };
 

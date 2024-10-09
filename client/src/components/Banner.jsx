@@ -11,7 +11,7 @@ const Banner = () => {
         ready to bring your ideas to life.
       </p>
       <button
-        className="bg-white text-blue-500 font-semibold py-3 px-8 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+        className="btn-gradient font-semibold py-3 px-8 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
         onClick={() => alert("Let's get in touch!")}
       >
         Let's Get In Touch

@@ -23,7 +23,7 @@ const Profile = () => {
         {socialLinks.map((link) => (
           <div
             key={link.id}
-            className="flex items-center justify-center bg-white text-blue-600 hover:bg-blue-600 hover:text-white  w-6 h-6 rounded-full border shadow-sm shadow-blue-400"
+            className="flex items-center justify-center btn-gradient hover:bg-blue-600 hover:text-white  w-8 h-8 rounded-full shadow-sm "
           >
             {link.icon}
           </div>

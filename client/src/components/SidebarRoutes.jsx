@@ -61,7 +61,7 @@ const SidebarRoutes = () => {
               to={route.href}
               className={`flex items-center gap-x-2 font-normal px-2 my-3 h-8 ${
                 pathname === route.href
-                  ? "text-white bg-blue-500 rounded-md "
+                  ? "btn-gradient  rounded-md "
                   : "text-gray-900 dark:text-white"
               }`}
             >

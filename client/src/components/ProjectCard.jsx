@@ -11,13 +11,13 @@ const ProjectCard = ({ image, btn1, btn2, btn3, title }) => {
           className="w-full h-[300px] md:w-[700px] md:h-[400px]  object-cover"
         />
         <div className="flex items-center justify-start pl-4 gap-2">
-          <button className="text-[9px] md:text-md text-blue-500 border border-blue-500 px-4 rounded-full">
+          <button className="text-[9px] md:text-md text-gradient border border-gradient px-4 rounded-full">
             {btn1}
           </button>
-          <button className="text-[9px] md:text-md text-blue-500 border border-blue-500 px-4 rounded-full">
+          <button className="text-[9px] md:text-md text-gradient border border-gradient px-4 rounded-full">
             {btn2}
           </button>
-          <button className="text-[9px] md:text-md text-blue-500 border border-blue-500 px-4 rounded-full">
+          <button className="text-[9px] md:text-md text-gradient border border-gradient px-4 rounded-full">
             {btn3}
           </button>
         </div>

@@ -12,7 +12,7 @@ const Sidebar = () => {
         <SidebarRoutes />
       </div>
       <div className="flex items-center justify-center my-6 w-full">
-        <button className="flex space-x-1 items-center justify-center bg-blue-500 text-white px-3 py-1 rounded-md">
+        <button className="flex space-x-1 items-center justify-center btn-gradient px-3 py-1 rounded-md">
           <FaPaperPlane />
           <h1>Let's Talk</h1>
         </button>
