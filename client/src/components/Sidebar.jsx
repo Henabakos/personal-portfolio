@@ -4,7 +4,7 @@ import SidebarRoutes from "./SidebarRoutes";
 
 const Sidebar = () => {
   return (
-    <section className="hidden lg:flex flex-col fixed left-12 w-48 h-screen bg-gray-100 justify-between  ">
+    <section className="hidden lg:flex flex-col fixed left-12 w-48 h-screen dark:bg-[#636363] bg-gray-100 justify-between  ">
       <div className="flex-1 overflow-y-auto">
         {" "}
         <Profile />
