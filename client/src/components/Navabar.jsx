@@ -1,6 +1,8 @@
 import React from "react";
 import { CiLight } from "react-icons/ci";
 import { FaHome } from "react-icons/fa";
+import DarkModeToggle from "./DarkModeToggle";
+import { Link } from "react-router-dom";
 
 const Navabar = () => {
   return (
