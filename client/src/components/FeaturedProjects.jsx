@@ -16,7 +16,7 @@ const FeaturedProjects = () => {
           obcaecati minus?
         </p>
       </div>
-      <button className="flex w-[80%] sm:w-18 md:w-72 h-10 md:h-12  bg-blue-500 text-white rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8">
+      <button className="flex w-[80%] sm:w-18 md:w-72 h-10 md:h-12  bg-blue-500 text-white rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 mb-10">
         <HiOutlineArrowRight className="text-lg" />
         <span className="text-sm sm:text-base md:text-lg">
           View All Projects
