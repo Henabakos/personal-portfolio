@@ -29,7 +29,7 @@ const BlogSection = () => {
   return (
     <div>
       <BlogHeader />
-      <div className="w-full grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="w-full grid sm:grid-cols-2 xl:grid-cols-3 gap-8  px-2 md:px-10 ">
         {blogData.map((data) => (
           <BlogCard data={data} />
         ))}

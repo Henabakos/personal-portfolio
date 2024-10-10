@@ -30,3 +30,64 @@ body {
 .btn-gradient {
   @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white;
 }
+
+/* Define the marquee keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Only translate half of the container width */
+  }
+}
+
+/* Apply the marquee animation */
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Pause the animation on hover */
+.group-hover\:pause:hover {
+  animation-play-state: paused;
+}
+
+/* Ensure overflow is hidden to prevent elements from spilling out */
+.overflow-hidden {
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scrollLeft {
+  animation: scrollLeft 10s linear infinite;
+  display: flex; /* Make sure items are in a row */
+}
+
+.animate-scrollRight {
+  animation: scrollRight 10s linear infinite;
+  display: flex; /* Make sure items are in a row */
+}
+
+/* Optional: Set a fixed height for the scrolling area */
+.relative.overflow-hidden {
+  height: 200px; /* Adjust height as necessary */
+  overflow: hidden; /* Hide overflowing items */
+}

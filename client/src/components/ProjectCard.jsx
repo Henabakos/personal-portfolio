@@ -4,11 +4,11 @@ import { FaArrowRight, FaArrowUp } from "react-icons/fa";
 const ProjectCard = ({ image, btn1, btn2, btn3, title }) => {
   return (
     <div className="">
-      <div className="w-full h-full space-y-4">
+      <div className="w-full h-full space-y-4  px-2 md:px-10 ">
         <img
           src={image}
           alt={title}
-          className="w-full h-[300px] md:w-[700px] md:h-[400px]  object-cover"
+          className="w-full h-[300px] md:w-[700px] md:h-[400px] rounded-2xl border-purple-500 object-cover"
         />
         <div className="flex items-center justify-start pl-4 gap-2">
           <button className="text-[9px] md:text-md text-gradient border border-gradient px-4 rounded-full">

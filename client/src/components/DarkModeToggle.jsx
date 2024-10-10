@@ -29,7 +29,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={() => setIsDarkMode(!isDarkMode)}
-      className="p-2 rounded  text-blue-500 transition"
+      className="p-2  text-white btn-gradient rounded-full transition"
     >
       {isDarkMode ? <CiLight /> : <CiDark />}
     </button>

@@ -67,7 +67,7 @@ const PricingCards = () => {
               Performance Optimization
             </li>
           </ul>
-          <button className="w-full py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+          <button className="w-full py-3 bg-white text-purple-500 rounded-full font-semibold hover:bg-gray-100 transition-colors">
             Get Started
           </button>
         </div>

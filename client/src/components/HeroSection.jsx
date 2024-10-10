@@ -1,9 +1,10 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Progress from "./Progress";
 
 const HeroSection = () => {
   return (
-    <div className="w-full flex flex-col h-full mb-8">
+    <div className="w-full h-full md:h-screen flex flex-col items-start">
       <div className="w-full h-full flex flex-col md:flex-row items-start md:mt-10 justify-center md:gap-4 lg:h-screen px-4 md:px-8 lg:pl-12 xl:pl-16 py-10">
         <div className="w-full lg:text-left">
           <h1 className="flex flex-col font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-10">
@@ -45,6 +46,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
+      <Progress />
     </div>
   );
 };

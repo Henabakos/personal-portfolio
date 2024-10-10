@@ -3,7 +3,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 const FeaturedProjects = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between border-b my-10  ">
+    <div className="w-full flex flex-col md:flex-row items-center justify-between border-b my-10  px-2 md:px-10  ">
       <div className="flex flex-col justify-center p-4 my-4 w-full lg:w-1/2">
         <h1 className="text-3xl sm:text-3xl md:text-4xl  font-[400] text-slate-700 dark:text-gray-100 py-5">
           <span className="text-blue-500 font-light pr-3">|</span>
