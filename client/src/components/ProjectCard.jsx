@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ProjectCard = ({ image, btn1, btn2, btn3, title }) => {
   return (
-    <div className="w-sm mx-auto bg-white dark:bg-[#3b3b3b] rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className="max-w-sm mx-auto bg-white dark:bg-[#3b3b3b] rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl">
       {/* Image */}
       <img
         src={image}

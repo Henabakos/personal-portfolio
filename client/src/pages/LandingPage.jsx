@@ -154,7 +154,7 @@ const LandingPage = () => {
       </div>
       <Banner />
       <FeaturedProjects />
-      <div className="mx-auto w-full grid sm:grid-cols-2 md:grid-cols-5 gap-2 border-b pb-16 mb-10 overflow-x-auto scrollbar-hide">
+      <div className="mx-auto w-full grid sm:grid-cols-2 md:grid-cols-5 gap-y-5 gap-x-2 border-b pb-16 mb-10 overflow-x-auto scrollbar-hide">
         {projectData.map((project, index) => (
           <ProjectCard
             key={index} // Don't forget to add a key prop for list rendering!

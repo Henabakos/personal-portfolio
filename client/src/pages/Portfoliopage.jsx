@@ -99,7 +99,7 @@ const Portfoliopage = () => {
       </div>
 
       {/* Project Cards */}
-      <div className="mx-auto w-full grid sm:grid-cols-3 xl:grid-cols-3 gap-5">
+      <div className="mx-auto w-full grid sm:grid-cols-3 xl:grid-cols-3 gap-y-5 gap-x-2">
         {projectData.map((project, index) => (
           <ProjectCard
             key={index} // Unique key for each project
