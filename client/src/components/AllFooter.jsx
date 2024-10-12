@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const AllFooter = () => {
   return (
-    <footer className="border-t border-purple-600 border-opacity-30 border-[1px]dark:bg-gradient-to-r text-gray-700 dark:text-gray-200 py-10 mt-10">
+    <footer className="border-t border-purple-600 border-opacity-30 border-[1px]dark:bg-gradient-to-r text-gray-700 dark:text-gray-200 py-10 mt-10 mb-7 md:mb-0">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Quick Links */}
         <div>
