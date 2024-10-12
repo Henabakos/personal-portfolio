@@ -14,7 +14,7 @@ const BlogHeader = () => {
           dolorem deserunt earum vero aliquam nam iste corporis illo pariatur ?
         </p>
       </div>
-      <button className="flex w-[80%] sm:w-18 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8">
+      <button className="flex w-[80%] sm:w-18 gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">
         <HiOutlineArrowRight className="text-lg" />
         <span className="text-sm sm:text-base md:text-lg">
           See All Articles

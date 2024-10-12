@@ -17,7 +17,7 @@ const WhatIdo = () => {
       </div>
 
       <div className="flex justify-center lg:mt-16">
-        <button className="flex w-72 h-12 btn-gradient rounded-full items-center justify-center space-x-2">
+        <button className="flex w-52  gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">
           <HiOutlineArrowRight className="text-lg" />
           <span className="text-sm sm:text-base md:text-lg">
             Services & Pricing

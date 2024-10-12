@@ -19,6 +19,7 @@ import {
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
+import ContactForm from "../components/ContactForm";
 
 const skills = [
   {
@@ -104,30 +105,46 @@ const skills = [
 ];
 const projectData = [
   {
-    title: "Inventory Dashboard",
-    btn1: "react js",
-    btn2: "Web development",
-    btn3: "TailwindCss",
-    img: "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
-  },
-  {
     title: "Portfolio Website",
-    btn1: "react js",
-    btn2: "Web development",
-    btn3: "TailwindCss",
+    btn1: "react",
+    btn2: "Web",
+    btn3: "Tailwind",
     img: "https://img.freepik.com/free-vector/flat-design-portfolio-template-design_52683-80880.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
   },
   {
+    title: "Inventory Dashboard",
+    btn1: "react ",
+    btn2: "Web ",
+    btn3: "Tailwind",
+    img: "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
+  },
+  {
+    title: "Designr Portfolio Website",
+    btn1: "react",
+    btn2: "Web ",
+    btn3: "Tailwind",
+    img: "https://i.pinimg.com/enabled/564x/f6/f2/82/f6f282669632157cb46e33ea7d8bf5be.jpg",
+  },
+
+  {
     title: "E-commerce Website",
-    btn1: "react js",
-    btn2: "Web development",
-    btn3: "TailwindCss",
+    btn1: "react",
+    btn2: "Web ",
+    btn3: "Tailwind",
     img: "https://img.freepik.com/premium-photo/website-company-called-nike_659722-12325.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
+  },
+
+  {
+    title: "Gym Website",
+    btn1: "react",
+    btn2: "Web ",
+    btn3: "Tailwind",
+    img: "https://i.pinimg.com/564x/85/dd/4f/85dd4f0031481e04ed1c873029718456.jpg",
   },
 ];
 const LandingPage = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full px-2 md:px-5">
       <HeroSection />
 
       <WhatIdo />
@@ -137,9 +154,10 @@ const LandingPage = () => {
       </div>
       <Banner />
       <FeaturedProjects />
-      <div className="mx-auto w-full grid sm:grid-cols-2  gap-8 border-b pb-16 mb-10">
-        {projectData.map((project) => (
+      <div className="mx-auto w-full grid sm:grid-cols-2 md:grid-cols-5 gap-2 border-b pb-16 mb-10 overflow-x-auto scrollbar-hide">
+        {projectData.map((project, index) => (
           <ProjectCard
+            key={index} // Don't forget to add a key prop for list rendering!
             image={project.img}
             btn1={project.btn1}
             btn2={project.btn2}
@@ -150,6 +168,21 @@ const LandingPage = () => {
       </div>
       <Testimonial />
       <BlogSection />
+      <div className="w-full flex flex-col md:flex-row md:items-center  border-b my-10  px-2 md:px-10  ">
+        <div className="flex flex-col md:justify-center p-4 my-4 w-full lg:w-[70vw]">
+          <h1 className="text-3xl sm:text-3xl md:text-4xl  font-[400] text-slate-700 dark:text-gray-100 py-5">
+            <span className="text-blue-500 font-light pr-3">|</span>
+            Get In Touch
+          </h1>
+          <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex
+            dolorem deserunt earum vero aliquam nam iste corporis illo pariatur
+            exercitationem, minima est quisquam quibusdam tempore. Eveniet
+            quaerat obcaecati minus?
+          </p>
+        </div>
+      </div>
+      <ContactForm />
     </div>
   );
 };

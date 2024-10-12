@@ -12,6 +12,8 @@ import Service from "./pages/Service";
 import BlogPage from "./pages/BlogPage";
 import Spinner from "./components/Spinner";
 import AOSWrapper from "./utils/AosWrapper";
+import ContacPage from "./pages/ContacPage";
+import ResumeRightSide from "./pages/Resume";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -45,6 +47,8 @@ const App = () => {
                   <Route path="/portfolio" element={<Portfoliopage />} />
                   <Route path="/services" element={<Service />} />
                   <Route path="/blog" element={<BlogPage />} />
+                  <Route path="/contact" element={<ContacPage />} />
+                  <Route path="/resume" element={<ResumeRightSide />} />
                 </Routes>
                 <AllFooter />
               </div>

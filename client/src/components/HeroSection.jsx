@@ -30,10 +30,10 @@ const HeroSection = () => {
             consequatur facere nulla sequi.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 w-full">
-            <button className="btn-gradient flex items-center justify-center gap-2  text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full w-full sm:w-auto">
+            <button className="btn-gradient flex items-center justify-center gap-2  text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full w-full sm:w-auto hover:scale-105 transition-transform duration-300 shadow-sm">
               Let's Talk
             </button>
-            <button className="flex items-center justify-center gap-2 bg-white border-2 border-gradient text-gradient px-4 sm:px-6 py-2 sm:py-3 rounded-full w-full sm:w-auto">
+            <button className="flex items-center justify-center gap-2 bg-white border-2 border-gradient text-gradient px-4 sm:px-6 py-2 sm:py-3 rounded-full w-full sm:w-auto hover:scale-105 transition-transform duration-300 shadow-sm">
               View Resume
             </button>
           </div>
