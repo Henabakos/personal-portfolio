@@ -18,9 +18,7 @@ const ContactHeader = () => {
         </h1>
         <div>
           <p className="text-center mx-auto text-base md:text-lg font-regular text-gray-700 dark:text-gray-200 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-            sed repudiandae eos soluta iure, voluptas laudantium vitae expedita
-            dolores quibusdam
+          Have questions or want to discuss a project? I’m just a message away! Reach out to me for inquiries, collaborations, or to explore how we can work together to achieve your goals.
           </p>
         </div>
         <div className="flex items-center justify-center space-x-3 mt-3">

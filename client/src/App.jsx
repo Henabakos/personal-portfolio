@@ -14,6 +14,8 @@ import Spinner from "./components/Spinner";
 import AOSWrapper from "./utils/AosWrapper";
 import ContacPage from "./pages/ContacPage";
 import ResumeRightSide from "./pages/Resume";
+import ProductDetail from "./pages/productDetail";
+import BlogDetail from "./components/BlogDetail";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -49,6 +51,8 @@ const App = () => {
                   <Route path="/blog" element={<BlogPage />} />
                   <Route path="/contact" element={<ContacPage />} />
                   <Route path="/resume" element={<ResumeRightSide />} />
+                  <Route path="/product-detail" element={<ProductDetail />} />
+                  <Route path="/blog-detail" element={<BlogDetail />} />
                 </Routes>
                 <AllFooter />
               </div>

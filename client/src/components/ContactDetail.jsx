@@ -10,10 +10,7 @@ const ContactDetail = () => {
           Contact Details
         </h1>
         <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex
-          dolorem deserunt earum vero aliquam nam iste corporis illo pariatur
-          exercitationem, minima est quisquam quibusdam tempore. Eveniet quaerat
-          obcaecati minus?
+        Feel free to reach out through any of the following methods. I look forward to connecting with you!
         </p>
       </div>
     </div>

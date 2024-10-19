@@ -6,14 +6,14 @@ import PricingCards from "../components/PricingCards";
 const SearviceData = {
   header: " Services & Pricing",
   description:
-    " Lorem ipsum quia at earum, quo ad consequatur tenetur iste, cumvoluptatem odio maxime exercitationem pariatur excepturi id voluptatumnemo praesentium?",
+    " Discover the range of services I offer, tailored to meet your specific needs. From mobile app development to UI/UX design and website creation, I provide transparent pricing to ensure you receive exceptional value for your investment. Let’s find the perfect solution for your project!",
   icon: <PiPaperPlaneRight />,
   button: "let's work Together",
 };
 const customPlan = {
   header: " Went To Hire Me For A Custom Plan ?",
   description:
-    " Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. ",
+    " I’m here to help bring your unique vision to life! Whether you have a specific project in mind or need tailored solutions, I offer flexible custom plans designed to meet your goals and budget. Let’s collaborate to create something exceptional together! ",
   icon: <PiPaperPlaneRight />,
   button: "let's work Together",
 };

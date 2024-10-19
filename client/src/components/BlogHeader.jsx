@@ -10,8 +10,7 @@ const BlogHeader = () => {
           Latest Blogs
         </h1>
         <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex
-          dolorem deserunt earum vero aliquam nam iste corporis illo pariatur ?
+        Stay updated with my latest insights, tutorials, and thoughts on mobile app development, web design, and UI/UX trends. Explore fresh content designed to inspire, inform, and help you stay ahead in the digital world.
         </p>
       </div>
       <button className="flex w-[80%] sm:w-18 gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">

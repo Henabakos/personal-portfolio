@@ -5,7 +5,7 @@ import { PulseLoader } from "react-spinners"; // Import a spinner from react-spi
 const Spinner = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <PulseLoader color="#3b82f6" size={15} />
+      <PulseLoader color="#08a4a7" size={15} />
     </div>
   );
 };

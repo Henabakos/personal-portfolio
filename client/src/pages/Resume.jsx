@@ -179,7 +179,7 @@ const ResumeRightSide = () => (
       />
     </div>
 
-    <div className="container mx-auto p-8  shadow-lg shadow-purple-400/20 border border-purple-600/20 rounded-lg ">
+    <div className="container mx-auto p-8  shadow-lg shadow-cyan-600/20 border border-cyan-600/20 rounded-lg ">
       <Header />
       <WorkExperience />
       <Skills />

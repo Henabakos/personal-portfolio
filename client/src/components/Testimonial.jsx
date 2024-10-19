@@ -16,7 +16,6 @@ const testimonialData = [
     name: "Charls Darwin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
   },
@@ -25,26 +24,6 @@ const testimonialData = [
     name: "Charls Darwin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
-    icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-  },
-
-  {
-    id: 4,
-    name: "Charls Darwin",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
-    icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-  },
-  {
-    id: 5,
-    name: "Charls Darwin",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
   },
@@ -53,7 +32,6 @@ const testimonialData = [
     name: "Charls Darwin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
   },
@@ -62,7 +40,14 @@ const testimonialData = [
     name: "Charls Darwin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-
+    icon: <FaStar />,
+    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+  },
+  {
+    id: 6,
+    name: "Charls Darwin",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
   },
@@ -101,8 +86,7 @@ const Testimonial = () => {
             What People Say
           </h1>
           <p className="text-base md:text-lg font-normal text-gray-600 dark:text-gray-200 leading-relaxed">
-            Our clients love the work we do and the products we build. Here's
-            what some of them have to say about their experience with us.
+          Here’s what my clients have to say about working with me. From mobile apps to web development and UI/UX design, their feedback reflects my dedication to delivering top-tier solutions that exceed expectations.
           </p>
         </div>
       </div>
@@ -110,14 +94,14 @@ const Testimonial = () => {
       {/* Testimonial Cards */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto gap-4 px-5 py-4 snap-x snap-mandatory"
+        className="flex overflow-x-auto gap-4 px-5 py-4 snap-x snap-mandatory scroll-smooth scrollbar-hide"
         onMouseEnter={() => setIsHovered(true)} // Stop on hover
         onMouseLeave={() => setIsHovered(false)} // Resume when hover is off
       >
         {testimonialData.map((data) => (
           <div
             key={data.id}
-            className="min-w-[300px] bg-white dark:bg-[#636363] p-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out snap-center"
+            className="min-w-[300px] md:min-w-[350px] bg-white dark:bg-[#636363] p-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out snap-center"
           >
             <TestmonialCard data={data} />
           </div>

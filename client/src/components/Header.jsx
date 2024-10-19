@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({ data }) => {
   return (
@@ -10,9 +11,11 @@ const Header = ({ data }) => {
         <p className="w-[80%] text-sm md:text-lg font-regular text-gray-700 dark:text-gray-100 leading-relaxed py-4 text-center mx-auto  ">
           {data.description}
         </p>
-        <button className="flex items-center justify-center gap-2 btn-gradient px-4 py-2 rounded-full mb-9">
-          {data.icon} <span>{data.button}</span>
-        </button>
+        <Link to="/contact" className="flex items-center justify-center">
+          <button className="flex items-center justify-center gap-2 btn-gradient px-4 py-2 rounded-full mb-9">
+            {data.icon} <span>{data.button}</span>
+          </button>
+        </Link>
       </div>
     </div>
   );

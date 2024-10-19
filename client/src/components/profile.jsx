@@ -16,7 +16,7 @@ const Profile = () => {
           alt="profile"
           className="w-16 h-16 rounded-full"
         />
-        <h1 className="font-jost font-semibold">Name</h1>
+        <h1 className="font-jost font-semibold">Henok Assefa</h1>
         <p className="font-extralight text-sm">Full-Stack Software Engineer</p>
       </div>
       <div className="flex items-center justify-center space-x-3 mt-3">

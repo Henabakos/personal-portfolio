@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const WhatIdo = () => {
   return (
@@ -9,19 +10,21 @@ const WhatIdo = () => {
           <span className="text-gradient font-light pr-3">|</span>What I do
         </h1>
         <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex
-          dolorem deserunt earum vero aliquam nam iste corporis illo pariatur
-          exercitationem, minima est quisquam quibusdam tempore. Eveniet quaerat
-          obcaecati minus?
+          I build production-ready mobile apps, stunning websites, and tailored
+          management systems for businesses worldwide. With a focus on technical
+          excellence and seamless user experiences, I deliver scalable and
+          efficient solutions across various industries.
         </p>
       </div>
 
       <div className="flex justify-center lg:mt-16">
         <button className="flex w-52  gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">
           <HiOutlineArrowRight className="text-lg" />
-          <span className="text-sm sm:text-base md:text-lg">
-            Services & Pricing
-          </span>
+          <Link to="/services">
+            <span className="text-sm sm:text-base md:text-lg">
+              Services & Pricing
+            </span>
+          </Link>
         </button>
       </div>
     </div>

@@ -26,11 +26,11 @@ html,
 }
 
 .text-gradient {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-purple-400;
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-700 via-cyan-500 to-cyan-300;
 }
 
 .btn-gradient {
-  @apply bg-gradient-to-r from-blue-500 via-purple-600 to-purple-400 text-white;
+  @apply bg-gradient-to-r  from-cyan-700 via-cyan-500 to-cyan-300 text-white;
 }
 
 /* Define the marquee keyframes */
@@ -41,7 +41,7 @@ html,
   100% {
     transform: translateX(
       -50%
-    ); /* Only translate half of the container width */
+    ); 
   }
 }
 

@@ -71,7 +71,7 @@ const projectData = [
 const PortfolioData = {
   header: "A Collection Of My Best Projects",
   description:
-    "Lorem ipsum quia at earum, quo ad consequatur tenetur iste, cum voluptatem odio maxime exercitationem pariatur excepturi id voluptatumnemo praesentium?",
+    "Explore a curated selection of my finest work, showcasing my expertise in mobile app development, web design, and UI/UX design. Each project highlights my commitment to quality and innovation, demonstrating how I bring ideas to life through impactful digital solutions.",
   icon: <PiPaperPlaneRight />,
   button: "Let's Work Together",
 };

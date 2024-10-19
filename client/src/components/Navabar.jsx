@@ -19,7 +19,7 @@ const Navabar = () => {
       <nav className="block lg:hidden border-b shadow-md fixed top-0 px-8 w-full bg-gray-50 dark:bg-[#3b3b3b] dark:text-white z-50 ">
         <div className="flex justify-between items-center h-12 ">
           <button onClick={toggleSidebar}>
-            <IoMenuOutline size={24} className="text-blue-500" />
+            <IoMenuOutline size={24} className="text-cyan-400" />
           </button>
           <DarkModeToggle />
         </div>
@@ -33,9 +33,9 @@ const Navabar = () => {
       >
         {/* Sidebar Header */}
         <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
-          <h2 className="text-lg font-bold text-blue-500">Logo</h2>
+          <img src="/logo.png" alt="logo"  className="w-[80%] h-10"/>
           <button onClick={toggleSidebar}>
-            <FaTimes size={24} className="text-blue-500" />
+            <FaTimes size={24} className="text-cyan-400" />
           </button>
         </div>
 

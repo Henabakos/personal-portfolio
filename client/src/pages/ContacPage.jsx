@@ -5,8 +5,8 @@ import ContactDetail from "../components/ContactDetail";
 import { PiPhoneBold } from "react-icons/pi";
 import { CiMobile1 } from "react-icons/ci";
 import { IoLocationOutline, IoMailOpenOutline } from "react-icons/io5";
-import MapComponent from "../components/MapComponent";
 import ContactForm from "../components/ContactForm";
+import MapComponents from "../components/Map-Component";
 
 const ContacPage = () => {
   return (
@@ -17,31 +17,31 @@ const ContacPage = () => {
         <div className="flex items-center space-x-3">
           <div className="flex items-center">
             <span className="text-blue-500 font-light pr-3 text-5xl">|</span>
-            <CiMobile1 size={50} className="text-purple-600" />
+            <CiMobile1 size={50} className="text-cyan-600" />
           </div>
           <div>
             <div>
               <h1>Phone Number</h1>
-              <p>+251-123-456-789</p>
+              <p>+251-945-014-531</p>
             </div>
           </div>
         </div>
         <div className="flex items-center space-x-3">
           <div className="flex items-center">
             <span className="text-blue-500 font-light pr-3 text-5xl">|</span>
-            <IoMailOpenOutline size={50} className="text-purple-600" />
+            <IoMailOpenOutline size={50} className="text-cyan-600" />
           </div>
           <div>
             <div>
               <h1>Email Address</h1>
-              <p>Email.com</p>
+              <p>henogato9876@gmail.com</p>
             </div>
           </div>
         </div>{" "}
         <div className="flex items-center space-x-3">
           <div className="flex items-center">
             <span className="text-blue-500 font-light pr-3 text-5xl">|</span>
-            <IoLocationOutline size={50} className="text-purple-600" />
+            <IoLocationOutline size={50} className="text-cyan-600" />
           </div>
           <div>
             <div>
@@ -53,7 +53,7 @@ const ContacPage = () => {
       </div>
 
       <div className="w-full h-full  my-10 ">
-        <MapComponent />
+        <MapComponents />
       </div>
       <div className="w-full flex flex-col md:flex-row md:items-center  border-b mb-10   ">
         <div className="flex flex-col md:justify-center p-4 my-4 w-full lg:w-[70vw]">

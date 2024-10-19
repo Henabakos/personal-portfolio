@@ -154,18 +154,19 @@ const LandingPage = () => {
       </div>
       <Banner />
       <FeaturedProjects />
-      <div className="mx-auto w-full grid sm:grid-cols-2 md:grid-cols-5 gap-y-5 gap-x-2 border-b pb-16 mb-10 overflow-x-auto scrollbar-hide">
-        {projectData.map((project, index) => (
-          <ProjectCard
-            key={index} // Don't forget to add a key prop for list rendering!
-            image={project.img}
-            btn1={project.btn1}
-            btn2={project.btn2}
-            btn3={project.btn3}
-            title={project.title}
-          />
-        ))}
-      </div>
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-10">
+  {projectData.map((project, index) => (
+    <ProjectCard
+      key={index}
+      image={project.img}
+      btn1={project.btn1}
+      btn2={project.btn2}
+      btn3={project.btn3}
+      title={project.title}
+    />
+  ))}
+</div>
+
       <Testimonial />
       <BlogSection />
       <div className="w-full flex flex-col md:flex-row md:items-center  border-b my-10  px-2 md:px-10  ">
@@ -175,10 +176,7 @@ const LandingPage = () => {
             Get In Touch
           </h1>
           <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex
-            dolorem deserunt earum vero aliquam nam iste corporis illo pariatur
-            exercitationem, minima est quisquam quibusdam tempore. Eveniet
-            quaerat obcaecati minus?
+          I’d love to hear from you! Whether you have a project in mind, a question, or just want to connect, feel free to reach out. Let’s discuss how we can work together to bring your ideas to life.
           </p>
         </div>
       </div>
