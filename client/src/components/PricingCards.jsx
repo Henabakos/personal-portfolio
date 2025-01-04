@@ -4,7 +4,7 @@ const PricingCards = () => {
   return (
     <div className="flex justify-center items-center bg-gray-100 dark:bg-[#636363] min-h-screen py-10 px-5">
       <div className="grid md:grid-cols-3 gap-8">
-        <div className="bg-white dark:bg-[#3b3b3b] rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-gray-800  dark:text-gray-200 text-center">
             Basic Plan
           </h2>
@@ -72,7 +72,7 @@ const PricingCards = () => {
           </button>
         </div>
 
-        <div className="bg-white dark:bg-[#3b3b3b] rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 text-center">
             Enterprise Plan
           </h2>

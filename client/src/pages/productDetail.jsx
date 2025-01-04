@@ -26,11 +26,11 @@ const ProductDetail = () => {
               </div>
               <div>
                 <h3 className="font-medium">Industry:</h3>
-                <p className="text-gray-700 lg:text-3xl ">Technology</p>
+                <p className="text-gray-700 ">Technology</p>
               </div>
               <div>
                 <h3 className="font-medium">Location:</h3>
-                <p className="text-gray-700 lg:text-3xl ">Remote</p>
+                <p className="text-gray-700  ">Remote</p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const ProductDetail = () => {
           </ul>
 
           <h2 className="text-xl font-semibold mb-2">Project Overview</h2>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-gray-700 font-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In minima
             recusandae, officiis illum, voluptates animi delectus sunt commodi
             optio autem eligendi numquam nemo ea sint rem, corporis aliquid
@@ -63,7 +63,7 @@ const ProductDetail = () => {
           </p>
 
           <h2 className="text-xl font-semibold mb-2">The Challenge</h2>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-gray-700 font-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
             necessitatibus perferendis perspiciatis quae ipsa nobis cumque eaque
             dolores! Aliquam laboriosam enim magni corporis vitae, soluta
@@ -71,7 +71,7 @@ const ProductDetail = () => {
           </p>
 
           <h2 className="text-xl font-semibold mb-2">The Solution</h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 font-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
             necessitatibus perferendis perspiciatis quae ipsa nobis cumque eaque
             dolores! Aliquam laboriosam enim magni corporis vitae, soluta

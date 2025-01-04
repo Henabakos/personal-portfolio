@@ -1,6 +1,5 @@
 import { cn } from "../../utils/utills";
 import React, { useEffect, useState } from "react";
-import { FaAccusoft } from "react-icons/fa";
 
 export const InfiniteMovingCards = ({
   items,
@@ -86,10 +85,12 @@ export const InfiniteMovingCards = ({
           >
             <div className="dark:text-gray-200">
               <p className="flex gap-3 mb-4">
-                <span>{item.icons?.icon}</span>
-                <span>{item.icons?.icon1}</span>
+                {/* Render all icons dynamically */}
+                {item.icons?.map((Icon, iconIdx) => (
+                  <span key={iconIdx}>{Icon}</span>
+                ))}
               </p>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-500 font-normal mb-2 ">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gradient font-normal mb-2 ">
                 {item.name}
               </p>
               <p className="text-xs sm:text-sm md:text-sm text-gray-700 dark:text-gray-200 leading-relaxed">
@@ -97,7 +98,7 @@ export const InfiniteMovingCards = ({
               </p>
               <div className="mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className="text-sm leading-[1.6] text-gray-600 font-normal">
                     {item.title}
                   </span>
                 </span>

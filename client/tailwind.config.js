@@ -15,7 +15,8 @@ module.exports = {
       fontFamily: {
         jost: ["Jost", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        clash: ["Clash Display", "sans-serif"], // Added Clash Display font
+        clash: ["Clash Display", "sans-serif"],
+        zilla: ["Zilla Slab", "serif"],
       },
       animation: {
         scroll:

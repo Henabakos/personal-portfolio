@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaHome, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 import { IoMenuOutline } from "react-icons/io5";
 
 const Navabar = () => {
-  // State to toggle the sidebar
+  const { pathname } = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Function to handle opening and closing the sidebar
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -16,7 +26,13 @@ const Navabar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="block lg:hidden border-b shadow-md fixed top-0 px-8 w-full bg-gray-50 dark:bg-[#3b3b3b] dark:text-white z-50 ">
+      <nav
+        className={`block lg:hidden fixed top-0 px-8 w-full bg-gray-50 dark:bg-gray-900 dark:text-white z-50 ${
+          isScrolled
+            ? "bg-white/50 dark:bg-gray-900/50 backdrop-blur-md shadow-md"
+            : "bg-transparent"
+        } `}
+      >
         <div className="flex justify-between items-center h-12 ">
           <button onClick={toggleSidebar}>
             <IoMenuOutline size={24} className="text-cyan-400" />
@@ -27,13 +43,13 @@ const Navabar = () => {
 
       {/* Sidebar Drawer */}
       <div
-        className={`fixed top-0 left-0 w-64 h-full bg-white dark:bg-[#3b3b3b] shadow-lg z-50 transform ${
+        className={`fixed top-0 left-0 w-64 h-full bg-white dark:bg-gray-900 shadow-lg z-50 transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         {/* Sidebar Header */}
         <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
-          <img src="/logo.png" alt="logo"  className="w-[80%] h-10"/>
+          <img src="/logo.png" alt="logo" className="w-[80%] h-10" />
           <button onClick={toggleSidebar}>
             <FaTimes size={24} className="text-cyan-400" />
           </button>

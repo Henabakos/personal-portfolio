@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navabar from "./components/Navabar";
 import IconSidebar from "./components/IconSidebar";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import { Route, Routes, useLocation } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
@@ -33,16 +33,17 @@ const App = () => {
   }, [location.pathname]);
   return (
     <AOSWrapper>
-      <div className="dark:bg-[#3b3b3b] dark:text-white">
+      <div className="dark:bg-gray-900 dark:text-white">
         {loading ? (
           <Spinner />
         ) : (
           <div>
             <Navabar />
             <div className="flex ">
-              <IconSidebar />
-              <Sidebar />
-              <div className="pt-20  px-4 lg:pl-[250px] w-full">
+              {/* <IconSidebar /> */}
+              {/* <Navbar /> */}
+              <div className="w-full">
+                <Navbar />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route path="/about" element={<About />} />

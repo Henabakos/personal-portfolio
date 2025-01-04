@@ -61,7 +61,7 @@ const BlogPage = () => {
             <input
               type="text"
               placeholder="Subscribe to get latest blog"
-              className="border border-purple-600 dark:bg-[#3b3b3b] h-12 shadow-md rounded-lg px-4"
+              className="border border-purple-600 dark:bg-gray-900 h-12 shadow-md rounded-lg px-4"
             />
             <button className="btn-gradient rounded-full  h-12">
               Subscribe

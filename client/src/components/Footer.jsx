@@ -51,7 +51,7 @@ const sidebarData = [
 const Footer = () => {
   const { pathname } = useLocation();
   return (
-    <footer className="block lg:hidden w-full bg-gray-100 dark:bg-[#3b3b3b] dark:text-white border-t shadow-sm bottom-0 fixed z-50 px-4">
+    <footer className="block lg:hidden w-full bg-gray-100 dark:bg-gray-900 dark:text-white border-t shadow-sm bottom-0 fixed z-50 px-4">
       <div className="w-full flex items-center justify-between h-12">
         {sidebarData.map((route) => (
           <div key={route.href} className="relative">

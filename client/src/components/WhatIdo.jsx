@@ -4,29 +4,26 @@ import { Link } from "react-router-dom";
 
 const WhatIdo = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-10 md:space-x-8 space-y-8 md:space-y-0">
-      <div className="flex flex-col justify-center w-full lg:w-1/2  md:text-left">
-        <h1 className="text-3xl sm:text-3xl md:text-4xl  font-[400] text-slate-700 dark:text-gray-100 py-5">
-          <span className="text-gradient font-light pr-3">|</span>What I do
+    <div className="w-full flex flex-col md:flex-row items-center justify-between py-12  dark:bg-gray-900 max-sm:px-4 gap-8">
+      {/* Left Content */}
+      <div className="flex-1 flex flex-col text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl font-[400] text-gray-800 dark:text-gray-100 mb-6">
+          <span className="text-gradient font-light pr-3">|</span>What I Do
         </h1>
-        <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed">
-          I build production-ready mobile apps, stunning websites, and tailored
-          management systems for businesses worldwide. With a focus on technical
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+          I specialize in crafting production-ready mobile apps, stunning
+          websites, and tailored management systems. With a focus on technical
           excellence and seamless user experiences, I deliver scalable and
-          efficient solutions across various industries.
+          efficient solutions for global businesses.
         </p>
       </div>
 
-      <div className="flex justify-center lg:mt-16">
-        <button className="flex w-52  gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">
-          <HiOutlineArrowRight className="text-lg" />
-          <Link to="/services">
-            <span className="text-sm sm:text-base md:text-lg">
-              Services & Pricing
-            </span>
-          </Link>
+      <Link to="/services">
+        <button className="flex items-center gap-3 bg-gradient-to-r from-cyan-700 to-cyan-400 text-white px-6 py-2 md:px-8 rounded-full shadow-md text-base md:text-lg font-semibold hover:from-cyan-400 hover:to-cyan-700 hover:scale-105 transition-transform duration-300">
+          <HiOutlineArrowRight className="text-lg md:text-xl" />
+          View All Services
         </button>
-      </div>
+      </Link>
     </div>
   );
 };

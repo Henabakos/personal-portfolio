@@ -4,7 +4,7 @@ import { IoLocateOutline, IoSendOutline } from "react-icons/io5";
 
 const ContactForm = () => {
   return (
-    <div className="w-full p-10 bg-white dark:bg-[#3b3b3b] border border-cyan-600/15 rounded-xl shadow-lg">
+    <div className="w-full p-10 bg-white dark:bg-gray-900 border border-cyan-600/15 rounded-xl shadow-lg">
       <div className="w-full flex flex-col items-center space-y-4">
         {/* Input Fields */}
         <div className="w-full grid md:grid-cols-2 gap-6">

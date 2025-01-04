@@ -57,7 +57,7 @@ const Progress = () => {
 
   return (
     <div
-      className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      className="w-full gap-8 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 justify-between md:gap-24"
       ref={progressRef}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center">
