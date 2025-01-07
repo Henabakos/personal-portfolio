@@ -27,7 +27,7 @@ const HeroSection = () => {
               />
             </span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 font-light">
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 font-light max-sm:px-5">
             I craft innovative mobile apps, dynamic websites, and user-centered
             digital solutions that create meaningful experiences for clients
             worldwide.
@@ -53,11 +53,15 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <img
-            src="https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg"
-            alt="profile"
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
-          />
+          <div className="relative w-40 h-44 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-80">
+            <img
+              src="profile.jpg"
+              alt="profile"
+              className="w-full h-full rounded-2xl shadow-lg transition-transform duration-300 object-cover border-[4px] border-cyan-500/70"
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-cyan-600/25 rounded-2xl"></div>
+          </div>
         </motion.div>
       </div>
       <div className="flex py-10">

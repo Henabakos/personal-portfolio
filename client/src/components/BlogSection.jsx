@@ -1,39 +1,49 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 import BlogHeader from "./BlogHeader";
+import BlogGrid from "./BlogGrid";
 
-const blogData = [
+const dummyBlogs = [
   {
-    image:
-      "https://img.freepik.com/free-photo/technology-circuit-processor-innovation-network-concept_53876-124249.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
-    title: "The Revolution Of AI",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex dolorem deserunt earum vero aliquam nam iste corporis illo pariatur ?",
+    id: 1,
+    title: "How to Start with React",
+    excerpt:
+      "Learn the basics of React and start building your first app today.",
+    author: "Jane Doe",
+    date: "Jan 7, 2025",
+    readingTime: "5 min read",
+    image: "https://via.placeholder.com/400x200",
+    featuredImage: "https://via.placeholder.com/800x400",
+    content: [
+      "React is a popular JavaScript library for building user interfaces.",
+      "This guide will walk you through the basics of getting started with React.",
+    ],
   },
   {
-    image:
-      "https://img.freepik.com/free-vector/abstract-gradient-circuit-board-background_52683-14562.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
-    title: "The Revolution Of AI",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex dolorem deserunt earum vero aliquam nam iste corporis illo pariatur ?",
-  },
-  {
-    image:
-      "https://img.freepik.com/premium-photo/computer-screen-with-words-code-it_1126040-1237.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
-    title: "The Revolution Of AI",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex dolorem deserunt earum vero aliquam nam iste corporis illo pariatur ?",
+    id: 2,
+    title: "Understanding Tailwind CSS",
+    excerpt:
+      "Discover how CSS Grid and Flexbox can transform your web layouts, making them responsive and user-friendly.",
+    author: "Henok Assefa",
+    date: "Jan 8, 2025",
+    readingTime: "7 min read",
+    image: "https://via.placeholder.com/400x200",
+    featuredImage: "https://via.placeholder.com/800x400",
+    content: [
+      "Introduction: Importance of responsive design and how CSS Grid and Flexbox are game-changers.",
+      "Understanding CSS Grid: Concepts, code examples, and use cases.",
+      "Exploring Flexbox: Key properties, patterns, and examples.",
+      "Combining Grid and Flexbox: Guide to building layouts with both.",
+      "Best Practices: Mobile-first design and optimizing layouts for various screen sizes.",
+      "Conclusion: Advantages of CSS Grid and Flexbox.",
+    ],
   },
 ];
 const BlogSection = () => {
   return (
-    <div>
+    <div className="max-sm:px-4">
       <BlogHeader />
-      <div className="w-full grid sm:grid-cols-2 xl:grid-cols-3 gap-8  px-2 md:px-10 mb-20 ">
-        {blogData.map((data) => (
-          <BlogCard data={data} />
-        ))}
-      </div>
+      <BlogGrid blogs={dummyBlogs} />
     </div>
   );
 };

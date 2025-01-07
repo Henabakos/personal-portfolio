@@ -116,72 +116,78 @@ const projects = [
 
 const projectData = [
   {
-    title: "Portfolio Website",
-    btn1: "react",
-    btn2: "Web",
-    btn3: "Tailwind",
-    img: "https://img.freepik.com/free-vector/flat-design-portfolio-template-design_52683-80880.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
+    title: "Inventory Dashboard",
+    description:
+      "A robust dashboard to manage inventory and sales in real time.",
+    image:
+      "https://i.pinimg.com/474x/b1/93/a3/b193a3e2211a3be34eaffa4ce7c71505.jpg",
+    features: [
+      "Real-time tracking",
+      "Customizable UI",
+      "Analytics integration",
+    ],
+    tags: ["React", "Web", "Tailwind CSS"],
+    category: "Frontend",
   },
   {
     title: "Inventory Dashboard",
-    btn1: "react ",
-    btn2: "Web ",
-    btn3: "Tailwind",
-    img: "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
-  },
-  {
-    title: "Designr Portfolio Website",
-    btn1: "react",
-    btn2: "Web ",
-    btn3: "Tailwind",
-    img: "https://i.pinimg.com/enabled/564x/f6/f2/82/f6f282669632157cb46e33ea7d8bf5be.jpg",
-  },
-
-  {
-    title: "E-commerce Website",
-    btn1: "react",
-    btn2: "Web ",
-    btn3: "Tailwind",
-    img: "https://img.freepik.com/premium-photo/website-company-called-nike_659722-12325.jpg?ga=GA1.1.759831061.1727009205&semt=ais_hybrid",
+    description:
+      "A robust dashboard to manage inventory and sales in real time.",
+    image:
+      "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg",
+    features: [
+      "Real-time tracking",
+      "Customizable UI",
+      "Analytics integration",
+    ],
+    tags: ["React", "Web", "Tailwind CSS"],
+    category: "Frontend",
   },
 
   {
-    title: "Gym Website",
-    btn1: "react",
-    btn2: "Web ",
-    btn3: "Tailwind",
-    img: "https://i.pinimg.com/564x/85/dd/4f/85dd4f0031481e04ed1c873029718456.jpg",
+    title: "Inventory Dashboard",
+    description:
+      "A robust dashboard to manage inventory and sales in real time.",
+    image:
+      "https://i.pinimg.com/236x/04/2c/57/042c577a9bbc63473b6269ff8693902f.jpg",
+    features: [
+      "Real-time tracking",
+      "Customizable UI",
+      "Analytics integration",
+    ],
+    tags: ["React", "Web", "Tailwind CSS"],
+    category: "Frontend",
   },
 ];
 const LandingPage = () => {
   return (
-    <div className="w-full sm:px-10 lg:px-24">
+    <div className="w-full  ">
       <HeroSection />
       <Services />
       <Banner />
       <FeaturedProjects />
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-10 max-sm:px-10 px-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-10 gap-10 px-4">
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}
-            image={project.img}
-            btn1={project.btn1}
-            btn2={project.btn2}
-            btn3={project.btn3}
             title={project.title}
+            description={project.description}
+            image={project.image}
+            features={project.features}
+            tags={project.tags}
           />
         ))}
       </div>
 
       <Testimonial />
       <BlogSection />
-      <div className="w-full flex flex-col md:flex-row md:items-center  border-b my-10  px-2 md:px-10  ">
-        <div className="flex flex-col md:justify-center p-4 my-4 w-full lg:w-[70vw]">
-          <h1 className="text-3xl sm:text-3xl md:text-4xl  font-[400] text-slate-700 dark:text-gray-100 py-5">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between py-12  dark:bg-gray-900 max-sm:px-4 gap-8">
+        <div className="flex-1 flex flex-col text-left">
+          <h1 className="text-3xl md:text-4xl font-[400] text-gray-800 dark:text-gray-100 mb-6">
             <span className="text-blue-500 font-light pr-3">|</span>
             Get In Touch
           </h1>
-          <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             I’d love to hear from you! Whether you have a project in mind, a
             question, or just want to connect, feel free to reach out. Let’s
             discuss how we can work together to bring your ideas to life.

@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 const WhatIdo = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-between py-12  dark:bg-gray-900 max-sm:px-4 gap-8">
-      {/* Left Content */}
-      <div className="flex-1 flex flex-col text-center md:text-left">
+      <div className="flex-1 flex flex-col text-left">
         <h1 className="text-3xl md:text-4xl font-[400] text-gray-800 dark:text-gray-100 mb-6">
           <span className="text-gradient font-light pr-3">|</span>What I Do
         </h1>

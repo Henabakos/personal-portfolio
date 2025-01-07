@@ -3,9 +3,8 @@ import React, { useState, useEffect } from "react";
 import { CiDark, CiLight } from "react-icons/ci";
 
 const DarkModeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // Check for user preference or saved preference in localStorage
   useEffect(() => {
     const storedPreference = localStorage.getItem("dark-mode");
     if (storedPreference) {

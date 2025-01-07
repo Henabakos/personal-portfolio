@@ -3,17 +3,20 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 const BlogHeader = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between border-b my-10  px-2 md:px-10  ">
-      <div className="flex flex-col justify-center p-4 my-4 w-full lg:w-1/2">
-        <h1 className="text-3xl sm:text-3xl md:text-4xl  font-[400] text-slate-700 dark:text-gray-100 py-5">
-          <span className="text-blue-500 font-light pr-3">|</span>
+    <div className="w-full flex flex-col md:flex-row items-center justify-between py-12  dark:bg-gray-900 max-sm:px-4 gap-8">
+      <div className="flex-1 flex flex-col text-left">
+        <h1 className="text-3xl md:text-4xl font-[400] text-gray-800 dark:text-gray-100 mb-6">
+          <span className="text-cyan-500 font-light pr-3">|</span>
           Latest Blogs
         </h1>
-        <p className="text-base md:text-lg font-normal text-gray-700 dark:text-gray-200 leading-relaxed pl-1">
-        Stay updated with my latest insights, tutorials, and thoughts on mobile app development, web design, and UI/UX trends. Explore fresh content designed to inspire, inform, and help you stay ahead in the digital world.
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+          Stay updated with my latest insights, tutorials, and thoughts on
+          mobile app development, web design, and UI/UX trends. Explore fresh
+          content designed to inspire, inform, and help you stay ahead in the
+          digital world.
         </p>
       </div>
-      <button className="flex w-[80%] sm:w-18 gap-2 md:w-72 h-10 md:h-12  btn-gradient rounded-full items-center justify-center space-x-2 lg:mt-16 lg:ml-16 mx-8 hover:scale-105 transition-transform duration-300 shadow-sm mb-10">
+      <button className="flex items-center gap-3 bg-gradient-to-r from-cyan-700 to-cyan-400 text-white px-6 py-2 md:px-8 rounded-full shadow-md text-base md:text-lg font-semibold hover:from-cyan-400 hover:to-cyan-700 hover:scale-105 transition-transform duration-300">
         <HiOutlineArrowRight className="text-lg" />
         <span className="text-sm sm:text-base md:text-lg">
           See All Articles

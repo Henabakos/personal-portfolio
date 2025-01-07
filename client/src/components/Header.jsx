@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({ data }) => {
   return (
-    <div className="w-full h-[50vh] sm:h-[30vh] lg:h-[50vh] border-b mb-20">
+    <div className="w-full max-sm:h-[40vh] lg:h-[50vh] border-b mb-20  mt-20 md:mt-28">
       <div className="w-full h-full flex flex-col md:items-center justify-center">
         <h1 className="text-2xl font-[500] md:text-3xl text-center">
           {data.header}
