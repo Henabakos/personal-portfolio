@@ -33,11 +33,11 @@ const sidebarData = [
     icon: <IoNewspaperOutline size={15} />,
     label: "Resume",
   },
-  {
-    href: "/products",
-    icon: <AiOutlineProfile size={15} />,
-    label: "Products",
-  },
+  // {
+  //   href: "/products",
+  //   icon: <AiOutlineProfile size={15} />,
+  //   label: "Products",
+  // },
   {
     href: "/blog",
     icon: <GiNewspaper size={15} />,

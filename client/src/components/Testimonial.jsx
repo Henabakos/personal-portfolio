@@ -77,7 +77,7 @@ const Testimonial = () => {
   }, [isHovered]);
 
   return (
-    <div className="w-full dark:bg-gray-900 py-10 mb-10  max-sm:px-10">
+    <div className="w-full dark:bg-gray-900 py-10 mb-10 max-lg:px-4">
       {/* Section Header */}
       <div className="w-full flex flex-col text-left  mb-10 pb-6">
         <div className="px-4 md:px-0 max-w-2xl">
@@ -94,12 +94,11 @@ const Testimonial = () => {
         </div>
       </div>
 
-      {/* Testimonial Cards */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto  gap-6 md:gap-6 py-4 snap-x snap-mandatory scroll-smooth scrollbar-hide"
-        onMouseEnter={() => setIsHovered(true)} // Stop on hover
-        onMouseLeave={() => setIsHovered(false)} // Resume when hover is off
+        className="flex overflow-x-auto gap-8 md:gap-10 py-4 snap-x snap-mandatory scroll-smooth scrollbar-hide"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         {testimonialData.map((data) => (
           <div

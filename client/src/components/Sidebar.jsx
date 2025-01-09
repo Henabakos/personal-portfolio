@@ -24,11 +24,11 @@ const navbarData = [
     label: "Services",
   },
   { href: "/resume", icon: <IoNewspaperOutline size={20} />, label: "Resume" },
-  {
-    href: "/products",
-    icon: <AiOutlineProfile size={20} />,
-    label: "Products",
-  },
+  // {
+  //   href: "/products",
+  //   icon: <AiOutlineProfile size={20} />,
+  //   label: "Products",
+  // },
   { href: "/blog", icon: <GiNewspaper size={20} />, label: "Blog" },
   { href: "/contact", icon: <LuContact2 size={20} />, label: "Contact" },
 ];

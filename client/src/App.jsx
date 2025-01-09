@@ -17,6 +17,7 @@ import ResumeRightSide from "./pages/Resume";
 import ProductDetail from "./pages/productDetail";
 import BlogDetail from "./components/BlogDetail";
 import BlogDetailPage from "./pages/BlogDetailsPage";
+import { projects } from "./constants";
 
 const dummyBlogs = [
   {
@@ -79,9 +80,7 @@ const App = () => {
           <div>
             <Navabar />
             <div className="flex ">
-              {/* <IconSidebar /> */}
-              {/* <Navbar /> */}
-              <div className="w-full px-4 lg:px-28  custom-scrollbar">
+              <div className="w-full px-4 md:px-10 lg:px-28  custom-scrollbar">
                 <Navbar />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
@@ -98,9 +97,13 @@ const App = () => {
                   />
                   <Route path="/contact" element={<ContacPage />} />
                   <Route path="/resume" element={<ResumeRightSide />} />
-                  <Route path="/product-detail" element={<ProductDetail />} />
+                  <Route
+                    path="/project/:id"
+                    element={<ProductDetail projects={projects} />}
+                  />
                   <Route path="/blog-detail" element={<BlogDetail />} />
                 </Routes>
+
                 <AllFooter />
               </div>
             </div>

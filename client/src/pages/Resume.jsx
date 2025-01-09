@@ -1,6 +1,5 @@
 import React from "react";
 
-// Reusable Button Component
 const Button = ({ label, onClick, className }) => (
   <button
     onClick={onClick}
@@ -159,33 +158,44 @@ const SectionHeading = ({ title }) => (
 );
 
 // Main Component
-const ResumeRightSide = () => (
-  <div>
-    <div className="mb-20 flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-extrabold text-gradient text-center">
-        Online Resume
-      </h1>
-      <p className="mt-4 text-gray-600 dark:text-gray-200 py-5 w-[80%] text-center">
-        I am a passionate software engineer with over 10 years of experience in
-        web development, building scalable software solutions. I have worked
-        with diverse teams, managed projects from concept to completion, and
-        continuously strive to learn and adapt to new technologies.
-      </p>
+const ResumeRightSide = () => {
+  // Handle PDF Download
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // Path to your resume PDF
+    link.download = "Henok_Assefa_Resume.pdf"; // Optional: Set the filename for download
+    link.click(); // Trigger the download
+  };
 
-      <Button
-        label="Download PDF Version"
-        onClick={() => window.alert("Resume downloaded!")}
-        className="lg:ml-6 w-72 btn-gradient "
-      />
-    </div>
+  return (
+    <div>
+      <div className="mb-20 flex my-16 md:my-24 flex-col items-center justify-center">
+        <h1 className="text-5xl font-extrabold text-gradient text-center ">
+          Online Resume
+        </h1>
+        <p className="mt-4 text-gray-600 dark:text-gray-200 py-5 w-[80%] text-center">
+          I am a passionate software engineer with over 10 years of experience
+          in web development, building scalable software solutions. I have
+          worked with diverse teams, managed projects from concept to
+          completion, and continuously strive to learn and adapt to new
+          technologies.
+        </p>
 
-    <div className="container mx-auto p-8  shadow-lg shadow-cyan-600/20 border border-cyan-600/20 rounded-lg ">
-      <Header />
-      <WorkExperience />
-      <Skills />
-      <Education />
+        <Button
+          label="Download PDF Version"
+          onClick={handleDownload}
+          className="lg:ml-6 w-72 btn-gradient "
+        />
+      </div>
+
+      <div className="container mx-auto p-8  shadow-lg shadow-cyan-600/20 border border-cyan-600/20 rounded-lg my-20">
+        <Header />
+        <WorkExperience />
+        <Skills />
+        <Education />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ResumeRightSide;

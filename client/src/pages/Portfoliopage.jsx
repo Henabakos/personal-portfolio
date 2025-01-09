@@ -3,73 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import ProjectCard from "../components/ProjectCard";
 import { PiPaperPlaneRight } from "react-icons/pi";
 import Header from "../components/Header";
-
-const projectData = [
-  {
-    title: "Inventory Dashboard",
-    description:
-      "A robust dashboard to manage inventory and sales in real time.",
-    image:
-      "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg",
-    features: [
-      "Real-time tracking",
-      "Customizable UI",
-      "Analytics integration",
-    ],
-    tags: ["React", "Web", "Tailwind CSS"],
-    category: "Frontend",
-  },
-  {
-    title: "Inventory Dashboard",
-    description:
-      "A robust dashboard to manage inventory and sales in real time.",
-    image:
-      "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg",
-    features: [
-      "Real-time tracking",
-      "Customizable UI",
-      "Analytics integration",
-    ],
-    tags: ["React", "Web", "Tailwind CSS"],
-    category: "Frontend",
-  },
-  {
-    title: "Designr Portfolio Website",
-    category: "Design",
-    btn1: "React",
-    btn2: "Web",
-    btn3: "Tailwind",
-    img: "https://i.pinimg.com/enabled/564x/f6/f2/82/f6f282669632157cb46e33ea7d8bf5be.jpg",
-  },
-  {
-    title: "Inventory Dashboard",
-    description:
-      "A robust dashboard to manage inventory and sales in real time.",
-    image:
-      "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg",
-    features: [
-      "Real-time tracking",
-      "Customizable UI",
-      "Analytics integration",
-    ],
-    tags: ["React", "Web", "Tailwind CSS"],
-    category: "Frontend",
-  },
-  {
-    title: "Inventory Dashboard",
-    description:
-      "A robust dashboard to manage inventory and sales in real time.",
-    image:
-      "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg",
-    features: [
-      "Real-time tracking",
-      "Customizable UI",
-      "Analytics integration",
-    ],
-    tags: ["React", "Web", "Tailwind CSS"],
-    category: "Frontend",
-  },
-];
+import { projects } from "../constants";
 
 const PortfolioData = {
   header: "A Collection Of My Best Projects",
@@ -85,8 +19,8 @@ const Portfoliopage = () => {
   // Filter project data based on selected category
   const filteredProjects =
     selectedCategory === "All"
-      ? projectData
-      : projectData.filter((project) => project.category === selectedCategory);
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
 
   return (
     <div className="w-full mx-auto px-4">
@@ -116,14 +50,7 @@ const Portfoliopage = () => {
 
       <div className="mx-auto w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            features={project.features}
-            tags={project.tags}
-          />
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </div>

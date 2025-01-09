@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-auto bg-cyan-600 py-12 rounded-3xl flex flex-col items-center justify-center text-center text-white mx-6 ">
+    <div className="w-auto bg-cyan-600 dark:bg-cyan-500/50 py-12 rounded-3xl flex flex-col items-center justify-center text-center text-white mx-6 ">
       <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 animate-fadeIn">
         Let's work together!
       </h2>

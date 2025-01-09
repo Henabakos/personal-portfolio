@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="w-full pt-32 flex flex-col items-center justify-center  dark:bg-gray-900">
-      <div className="container mx-auto md:px-12 flex flex-col md:flex-row items-center justify-between">
-        {/* Text Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+    <section className="w-full pt-32 flex max-sm:px-0 max-lg:px-8 flex-col items-center justify-center  dark:bg-gray-900">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between md:gap-24">
+        <div className="w-full text-center md:text-left">
           <h1 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#13282b] dark:text-gray-100 mb-4">
             Hi,<span className=" px-0 lg:px-2"> I&apos;m</span>
             <span className="text-gradient pl-3">Henok Assefa</span>
@@ -39,7 +38,7 @@ const HeroSection = () => {
               </button>
             </Link>
             <Link to="/resume" aria-label="View my resume">
-              <button className="px-6 py-3 rounded-full border-2 border-gradient text-gradient font-medium bg-transparent hover:scale-105 transition-transform duration-300 shadow-md  w-[150px">
+              <button className="px-6 py-3 rounded-full border-2 border-cyan-500  text-gradient font-medium bg-transparent hover:scale-105 transition-transform duration-300 shadow-md  w-[150px">
                 View Resume
               </button>
             </Link>

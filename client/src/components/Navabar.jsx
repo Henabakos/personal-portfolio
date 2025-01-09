@@ -84,7 +84,7 @@ const Navabar = () => {
               Resume
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/products"
               className="block text-gray-700 dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700 py-2 px-4 transition-colors rounded"
@@ -92,7 +92,7 @@ const Navabar = () => {
             >
               Products
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/blog"

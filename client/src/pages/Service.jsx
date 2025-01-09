@@ -19,7 +19,7 @@ const customPlan = {
 };
 const Service = () => {
   return (
-    <div>
+    <div className="">
       <Header data={SearviceData} />
       <div className="w-full flex flex-col pl-2 md:pl-16 mb-10 pb-6 border-gray-300">
         <div className="px-4 md:px-0 max-w-2xl">

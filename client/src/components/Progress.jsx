@@ -57,7 +57,7 @@ const Progress = () => {
 
   return (
     <div
-      className="w-full gap-8 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 justify-between md:gap-24"
+      className="w-full gap-8 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 md:gap-10 lg:gap-36 md:my-10"
       ref={progressRef}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center">
@@ -67,14 +67,14 @@ const Progress = () => {
         </h1>
         <p className="text-center">Years of experience</p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center p-4">
+      <div className="flex flex-col lg:flex-row items-center justify-center">
         <h1 className="text-gradient text-4xl sm:text-5xl font-bold">
           {projectsCount} +{" "}
           <span className="text-5xl sm:text-7xl font-light pr-3">|</span>
         </h1>
         <p className="text-center">Completed Projects</p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center p-4 sm:pb-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center">
         <h1 className="text-gradient text-4xl sm:text-5xl font-bold">
           {clientsCount} +{" "}
           <span className="text-5xl sm:text-7xl font-light pr-3">|</span>

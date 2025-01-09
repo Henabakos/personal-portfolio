@@ -17,6 +17,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         clash: ["Clash Display", "sans-serif"],
         zilla: ["Zilla Slab", "serif"],
+        zoo: ["Zen Tokyo Zoo", "serif"],
       },
       animation: {
         scroll:
