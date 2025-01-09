@@ -10,7 +10,7 @@ const socialLinks = [
 
 const ContactHeader = () => {
   return (
-    <div className="h-full border-b border-cyan-500 shadow-sm w-full flex items-center justify-center py-16 md:py-28 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div className="h-full border-b border-cyan-500 shadow-sm w-full flex items-center justify-center py-16 md:py-28 dark:bg-gray-900 transition-colors duration-300">
       <div className="flex flex-col items-center justify-center md:w-[70%] text-center">
         <h1 className="text-3xl md:text-4xl  text-slate-700 dark:text-gray-100 mb-5">
           <span className="text-blue-500 font-light pr-3">|</span>
