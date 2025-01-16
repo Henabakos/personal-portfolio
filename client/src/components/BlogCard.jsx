@@ -2,15 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
-  const { id, title, excerpt, author, date, readingTime, image } = blog;
+  const {
+    id,
+    title,
+    excerpt,
+    author,
+    date,
+    readingTime,
+    image,
+    featuredImage,
+  } = blog;
 
   return (
     <Link to={`/blog/${id}`} className="block group">
       <div className="rounded-lg shadow-lg bg-gray-50 dark:bg-gray-800 overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:scale-105">
-        {/* Thumbnail Image */}
-        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <img
+          src={featuredImage}
+          alt={title}
+          className="w-full h-48 object-cover"
+        />
 
-        {/* Content Section */}
         <div className="p-4">
           {/* Title */}
           <h2 className="text-lg font-bold text-cyan-500  mb-2 line-clamp-2 group-hover:text-gradient">

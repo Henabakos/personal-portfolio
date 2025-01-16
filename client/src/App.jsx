@@ -28,8 +28,8 @@ const dummyBlogs = [
     author: "Jane Doe",
     date: "Jan 7, 2025",
     readingTime: "5 min read",
-    image: "https://via.placeholder.com/400x200",
-    featuredImage: "https://via.placeholder.com/800x400",
+    image: "/blog1.avif",
+    featuredImage: "/blog1.avif",
     content: [
       "React is a popular JavaScript library for building user interfaces.",
       "This guide will walk you through the basics of getting started with React.",
@@ -43,8 +43,8 @@ const dummyBlogs = [
     author: "Henok Assefa",
     date: "Jan 8, 2025",
     readingTime: "7 min read",
-    image: "https://via.placeholder.com/400x200",
-    featuredImage: "https://via.placeholder.com/800x400",
+    image: "/blog1.avif",
+    featuredImage: "/blog1.avif",
     content: [
       <span className="text-2xl font-bold py-3">Introduction</span>,
       "Have you ever spent hours styling a website, only to feel overwhelmed by endless CSS rules and file clutter? Don’t worry; you’re not alone! Let me introduce you to Tailwind CSS, a utility-first CSS framework that’s here to simplify your web design process. Whether you’re new to coding or a seasoned developer, Tailwind CSS can make your life so much easier.But what exactly is Tailwind CSS, and why is everyone talking about it?",

@@ -61,25 +61,25 @@ const Progress = () => {
       ref={progressRef}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <h1 className="text-gradient text-4xl sm:text-5xl font-bold pl-4">
+        <h1 className="text-gradient text-4xl sm:text-5xl font-bold">
           {experienceCount} +{" "}
-          <span className="text-5xl sm:text-7xl font-light pr-3">|</span>
+          <span className="text-5xl sm:text-7xl font-light ">|</span>
         </h1>
-        <p className="text-center">Years of experience</p>
+        <p className="text-center pl-4">Years of experience</p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center">
         <h1 className="text-gradient text-4xl sm:text-5xl font-bold">
           {projectsCount} +{" "}
-          <span className="text-5xl sm:text-7xl font-light pr-3">|</span>
+          <span className="text-5xl sm:text-7xl font-light">|</span>
         </h1>
-        <p className="text-center">Completed Projects</p>
+        <p className="text-center pl-4">Completed Projects</p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center">
         <h1 className="text-gradient text-4xl sm:text-5xl font-bold">
           {clientsCount} +{" "}
-          <span className="text-5xl sm:text-7xl font-light pr-3">|</span>
+          <span className="text-5xl sm:text-7xl font-light ">|</span>
         </h1>
-        <p className="text-center">Happy Clients</p>
+        <p className="text-center pl-4">Happy Clients</p>
       </div>
     </div>
   );

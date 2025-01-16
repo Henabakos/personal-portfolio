@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import { PiPaperPlaneRight } from "react-icons/pi";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const PortfolioData = {
-  header: "Case Study: Agency Website Development For Dev X",
+  header: "Case Study: Project Case Study",
   description:
     "Discover my case studies to see how I address real-world challenges with impactful solutions. Each highlights my user-centered design approach, from e-commerce revamps to mobile app launches, focusing on enhancing user satisfaction and achieving client goals.",
   icon: <PiPaperPlaneRight />,
@@ -57,14 +57,15 @@ const ProductDetail = ({ projects }) => {
               </div>
               <div>
                 <h3 className="font-medium">Live-link:</h3>
-                <p className="text-gray-500 dark:text-gray-400">{link}</p>
+                <p className="text-cyan-500 ">
+                  <Link to={link}>view demo</Link>
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex-1">
-          {/* Project Details */}
           <div className="mb-6">
             <img
               src={image}
