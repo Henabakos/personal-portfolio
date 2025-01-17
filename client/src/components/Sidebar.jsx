@@ -85,7 +85,10 @@ const Navbar = () => {
           </div>
           <div className="flex gap-x-10">
             <button className="btn-gradient px-4 py-2 rounded-md flex items-center">
-              <span>Let’s Talk</span>
+              <span>
+                {" "}
+                <Link to="/contact">Let’s Talk</Link>
+              </span>
             </button>
             <DarkModeToggle />
           </div>

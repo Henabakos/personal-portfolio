@@ -1,11 +1,25 @@
 import React from "react";
-import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
 const socialLinks = [
-  { id: 1, icon: <FaGithub size={18} />, url: "https://github.com/" },
-  { id: 2, icon: <FaFacebook size={18} />, url: "https://facebook.com/" },
-  { id: 3, icon: <FaLinkedin size={18} />, url: "https://linkedin.com/" },
-  { id: 4, icon: <FaInstagram size={18} />, url: "https://instagram.com/" },
+  { id: 1, icon: <FaGithub size={18} />, url: "https://github.com/Henabakos" },
+  {
+    id: 2,
+    icon: <FaFacebook size={18} />,
+    url: "https://web.facebook.com/profile.php?id=100077767354506",
+  },
+  {
+    id: 3,
+    icon: <FaLinkedin size={18} />,
+    url: "https://www.linkedin.com/in/henok-assefa-52a3b3308/",
+  },
+  { id: 4, icon: <FaTwitter size={18} />, url: "https://x.com/HenaBakos" },
 ];
 
 const ContactHeader = () => {

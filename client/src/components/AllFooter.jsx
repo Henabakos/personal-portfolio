@@ -81,10 +81,16 @@ const AllFooter = () => {
           </h2>
           <ul className="flex space-x-6 mb-4">
             {[
-              { icon: <FaFacebook />, link: "https://facebook.com" },
-              { icon: <FaTwitter />, link: "https://twitter.com" },
-              { icon: <FaLinkedin />, link: "https://linkedin.com" },
-              { icon: <FaGithub />, link: "https://github.com" },
+              {
+                icon: <FaFacebook />,
+                link: "https://web.facebook.com/profile.php?id=100077767354506",
+              },
+              { icon: <FaTwitter />, link: "https://x.com/HenaBakos" },
+              {
+                icon: <FaLinkedin />,
+                link: "https://www.linkedin.com/in/henok-assefa-52a3b3308/",
+              },
+              { icon: <FaGithub />, link: "https://github.com/Henabakos" },
             ].map(({ icon, link }, index) => (
               <li key={index}>
                 <a

@@ -47,7 +47,6 @@ const Navabar = () => {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        {/* Sidebar Header */}
         <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
           <img
             src="/logo.svg"
