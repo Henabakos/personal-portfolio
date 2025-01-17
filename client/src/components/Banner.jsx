@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -10,12 +11,14 @@ const Banner = () => {
         Looking for a developer to collaborate on your next big project? I'm
         ready to bring your ideas to life.
       </p>
-      <button
-        className="btn-gradient font-semibold py-3 px-8 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
-        onClick={() => alert("Let's get in touch!")}
-      >
-        Let's Get In Touch
-      </button>
+      <Link to="/contact">
+        <button
+          className="btn-gradient font-semibold py-3 px-8 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+          onClick={() => alert("Let's get in touch!")}
+        >
+          Let's Get In Touch
+        </button>
+      </Link>
     </div>
   );
 };

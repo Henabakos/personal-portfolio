@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const FeaturedProjects = () => {
   return (
@@ -16,10 +17,12 @@ const FeaturedProjects = () => {
           quality, innovation, and delivering results that meet client needs.
         </p>
       </div>
-      <button className="flex items-center gap-3 bg-gradient-to-r from-cyan-700 to-cyan-400 text-white px-6 py-2 md:px-8 rounded-full shadow-md text-base md:text-lg font-semibold hover:from-cyan-400 hover:to-cyan-700 hover:scale-105 transition-transform duration-300">
-        <HiOutlineArrowRight className="text-lg md:text-xl" />
-        View All Projects
-      </button>
+      <Link to="/portfolio">
+        <button className="flex items-center gap-3 bg-gradient-to-r from-cyan-700 to-cyan-400 text-white px-6 py-2 md:px-8 rounded-full shadow-md text-base md:text-lg font-semibold hover:from-cyan-400 hover:to-cyan-700 hover:scale-105 transition-transform duration-300">
+          <HiOutlineArrowRight className="text-lg md:text-xl" />
+          View All Projects
+        </button>
+      </Link>
     </div>
   );
 };
