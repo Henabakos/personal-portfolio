@@ -22,12 +22,29 @@ const BlogDetail = ({ blogs }) => {
       <div className="text-gray-500 text-sm mb-8">
         By <span className="font-medium">{author}</span> • {date}
       </div>
-      <div className="prose lg:prose-xl">
-        {content.map((paragraph, index) => (
-          <p key={index} className="py-2">
-            {paragraph}
-          </p>
-        ))}
+      <div>
+        {content.map((item, index) => {
+          switch (item.type) {
+            case "heading":
+              return (
+                <h2 key={index} className="text-2xl font-bold py-3">
+                  {item.text}
+                </h2>
+              );
+            case "paragraph":
+              return <p key={index}>{item.text}</p>;
+            case "list":
+              return (
+                <ul key={index}>
+                  {item.items.map((listItem, listIndex) => (
+                    <li key={listIndex}>{listItem}</li>
+                  ))}
+                </ul>
+              );
+            default:
+              return null;
+          }
+        })}
       </div>
     </div>
   );

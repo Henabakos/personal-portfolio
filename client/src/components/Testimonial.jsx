@@ -10,6 +10,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ const testimonialData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
     icon: <FaStar />,
     img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
+    role: "Software Engineer",
   },
 ];
 
