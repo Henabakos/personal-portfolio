@@ -16,9 +16,14 @@ const AllFooter = () => {
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-center md:items-start">
           <img
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo"
-            className="h-12 w-auto mb-4 md:h-16"
+            className="hidden dark:flex h-12 w-auto mb-4 md:h-16"
+          />
+          <img
+            src="/light-logo.svg"
+            alt="Logo"
+            className="flex dark:hidden h-12 w-auto mb-4 md:h-16"
           />
           <p className="text-sm text-gray-500 dark:text-gray-400 text-center md:text-left italic">
             “Every bug is an opportunity for growth.”

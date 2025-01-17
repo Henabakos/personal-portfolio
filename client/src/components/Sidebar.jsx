@@ -57,7 +57,16 @@ const Navbar = () => {
       <div className="w-full mx-auto sm:px-6 lg:px-24 ">
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-col items-center">
-            <img src="/logo.png" alt="Logo" className="h-12 w-auto  md:h-16" />
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              className="hidden dark:flex w-16 h-16"
+            />
+            <img
+              src="/light-logo.svg"
+              alt="Logo"
+              className="dark:hidden flex w-16 h-16"
+            />
           </div>
           <div className="flex space-x-3">
             {navbarData.map((item) => (

@@ -49,7 +49,16 @@ const Navabar = () => {
       >
         {/* Sidebar Header */}
         <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
-          <img src="/logo.png" alt="logo" className="w-[80%] h-10" />
+          <img
+            src="/logo.svg"
+            alt="logo"
+            className="hidden dark:flex w-[80%] h-10"
+          />
+          <img
+            src="/light-logo.svg"
+            alt="logo"
+            className="flex dark:hidden w-[80%] h-8"
+          />
           <button onClick={toggleSidebar}>
             <FaTimes size={24} className="text-cyan-400" />
           </button>
