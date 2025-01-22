@@ -5,57 +5,39 @@ import { FaStar } from "react-icons/fa";
 const testimonialData = [
   {
     id: 1,
-    name: "Charls Darwin",
+    name: "Eyob Tariku",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
+      "Henok Assefa is a highly skilled full-stack developer and UI/UX designer, known for being an exceptionally quick learner. He has incredible adaptability to acquire new skills and adjust to different environments. Additionally, he excels in communication, effectively collaborating with both clients and developers throughout his career",
     icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
+    img: "/test1.jpg",
+    role: "Mobile App Developer",
   },
   {
     id: 2,
-    name: "Charls Darwin",
+    name: "Kiya Kebe",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
+      "Henok is a highly skilled full-stack developer with a strong passion for creating impressive projects. Known for being sociable and adaptable, Henok is a fast learner who consistently stays up-to-date with the latest technologies and industry trends.",
     icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
+    img: "/test2.JPG",
+    role: "President Of CSEC ASTU",
   },
   {
     id: 3,
-    name: "Charls Darwin",
+    name: "Feysel Abdella",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
+      "Henok Assefa is an exceptional UI/UX designer and full-stack developer with a keen eye for detail and outstanding problem-solving skills. He consistently meets deadlines, delivering high-quality work that exceeds expectations. A fast learner and great communicator, Henok fosters collaboration and ensures project success. I highly recommend him for his technical expertise, creativity, and professionalism.",
     icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
+    img: "/test3.jpg",
+    role: "Top Reated Full-stack Developer",
   },
   {
     id: 4,
-    name: "Charls Darwin",
+    name: "Fasil Hawultie",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
+      "Working with Henok Assefa on a project was an absolute privilege. His deep expertise and clear understanding of his craft made every aspect of the collaboration seamless. Henok’s professionalism and skill left a lasting impression, and I’m eager for the opportunity to work with him again in the future.",
     icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
-  },
-  {
-    id: 5,
-    name: "Charls Darwin",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-    icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
-  },
-  {
-    id: 6,
-    name: "Charls Darwin",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exdolorem deserunt earum vero aliquam nam iste corporis illo pariatur",
-    icon: <FaStar />,
-    img: "https://img.freepik.com/free-vector/flat-style-woman-avatar_90220-2876.jpg",
-    role: "Software Engineer",
+    img: "/test4.jpg",
+    role: "Full-Stack Developer",
   },
 ];
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="w-full border border-cyan-500 rounded-lg shadow-sm p-4 md:p-6 lg:p-8 mx-auto max-w-xs lg:max-w-sm">
+    <div className="w-full border h-full border-cyan-500 rounded-lg shadow-sm p-4 md:p-6 lg:p-8 mx-auto max-w-xs lg:max-w-sm">
       <div>
         <p className="flex gap-3 mb-4">
           <span className="text-yellow-400">{data.icon}</span>
