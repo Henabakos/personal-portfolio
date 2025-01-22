@@ -51,8 +51,8 @@ const Progress = () => {
     };
   }, []);
 
-  const experienceCount = useCountUp(2, 1000, startCounting); // 2 years of experience
-  const projectsCount = useCountUp(50, 1000, startCounting); // 50 completed projects
+  const experienceCount = useCountUp(3, 1000, startCounting); // 2 years of experience
+  const projectsCount = useCountUp(20, 1000, startCounting); // 50 completed projects
   const clientsCount = useCountUp(10, 1000, startCounting); // 10 happy clients
 
   return (
